@@ -14,11 +14,12 @@ let fiat = {
         this.started = false;
     },
     drive: function () {
-        if (this.started && this.fuel > 1) {
+        if (this.started == true && this.fuel > 1) {
             alert("Бип!");
             this.fuel -= 2;
         }
-        if (this.fuel < 1) {
+        else if (this.fuel < 1) {
+            this.started == true
             alert("Сначала налейте в бак топливо!");
         }
         else {
