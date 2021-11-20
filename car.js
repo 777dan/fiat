@@ -19,7 +19,7 @@ let fiat = {
             this.fuel -= 2;
         }
         else if (this.fuel < 1) {
-            this.started == true
+            this.started == false;
             alert("Сначала налейте в бак топливо!");
         }
         else {
